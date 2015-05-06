@@ -15,6 +15,10 @@
   $<%= @product.formatted_price %>
 </p>
 
+<p>
+  <strong>Category:</strong>
+  <%= @product.category_id %>
+</p>
 
 <h3>Reviews</h3>
 	<% @product.reviews.each do |review| %> <p>
