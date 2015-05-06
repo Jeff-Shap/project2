@@ -15,15 +15,25 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+  
   <div class="field">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
+
   <div class="field">
     <%= f.label :price_in_dollars %><br>
     <%= f.text_field :price_in_dollars  %>
   </div>
+  
+  <div class="field">
+    <%= f.label :category %><br>
+      <%= f.collection_select(:id,Category.order(:catname),:id,:catname, include_blank: true %>
+  </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>
+
+>>>>>>> 181bf6d6c6ebcef895ce443f7967ad3bcde070a1
 <% end %>
