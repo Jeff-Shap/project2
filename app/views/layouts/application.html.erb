@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Wishlistapp</title>
+  <title>Congo Marketplace</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <script src="./jquery-min.js"></script>
 </head>
 <body>
+
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <link type="text/css" rel="stylesheet" href="./testserver.css">
+    
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <script src="./jquery-min.js"></script>
+
+   
+
+<div class="container" id="topbar">
+  <div class="jumbotron">
+    <h1>CONGO</h1>
+    <span class="lead">The LAB is having a firesale! </span>
+    <div id="nav-bar">
+	    <ul>
+	    	<li><%= link_to "Home", products_path %></li>
+	    	<li><%= link_to "About Congo", about_us_path %></li>
+	    	<li><%= link_to "Contact Us", contact_us_path %></li>
+	    </ul>
+  	</div>
+	</div>
+</div>
+
+
+
+
+
+
 
 <%= yield %>
 
