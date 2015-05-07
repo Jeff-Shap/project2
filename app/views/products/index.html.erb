@@ -1,8 +1,64 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<link type="text/css" rel="stylesheet" href="./assets/stylesheets/products.css">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Products</h1>
+<div class="container-fluid" id="topbar">
+  <div class="jumbotron" id="jumbo">
+    <h1 id="header">CONGO</h1>
+    <span class="lead">Why Congo? &nbsp&nbsp&nbsp&nbspAbout Us </span>     
+  </div>
+</div>
 
-<table>
+<div class="dropdown" id="dropdown1"> 
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    Product Category
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <% @categories.each do |cat| %>
+    <li roll="presentation"><%= cat.catname %></li>
+    <!-- <li role="presentation">Action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li> -->
+    <% end %>
+  </ul>
+</div>
+
+
+<div class="row" id="rowclass">
+        <% @products.each do |product| %>
+  <div id="mainwrapper">
+
+  <div class="col-md-4" id="col">
+
+      <div id="box-1" class="box">
+        <img src="<%=product.imageurl%>"atl= "imgbox" height=100%; width:100%; />
+        <span class="caption full-caption">
+        <h3><%=product.name%></h4>
+        <p><%=product.description%></p>
+        </span>
+ 
+    </div>
+
+  </div>
+           <% end %>
+</div>
+</div>
+
+
+
+
+<!-- <table>
   <thead>
     <tr>
       <th>Name</th>
@@ -29,3 +85,4 @@
 <br>
 
 <%= link_to 'New Product', new_product_path %>
+ -->

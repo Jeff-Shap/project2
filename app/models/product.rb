@@ -18,4 +18,6 @@ class Product < ActiveRecord::Base
 		return nil if price_in_cents.nil?
 		price_in_cents/100.0
 	end
+
+
 end
