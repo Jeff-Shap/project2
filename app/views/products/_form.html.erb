@@ -30,7 +30,10 @@
     <%= f.label :category %><br>
     <%= f.collection_select(:category_id, Category.order(:catname), :id, :catname, include_blank: true) %>
   </div>
-  
+  <div class="field">
+    <%= f.label :product_image_url %><br>
+    <%= f.text_field :imageurl  %>
+  </div>
 
 <div class="create_actions">
   <center><buttom type="button" aria-label="Left Align" id="button-i-want-to-move">
