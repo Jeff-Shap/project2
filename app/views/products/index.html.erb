@@ -21,22 +21,26 @@
   <div id="new_product"><%= link_to 'New Product', new_product_path %></div>
 </div> 
 </div> -->
+<span class="list_products">
+<h1 style="text-align: center;">List of Products</h1>
+</span>
 
-<div class="dropdown" id="dropdown1"> 
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-    Product Category
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-    <% @categories.each do |cat| %>
-    <li roll="presentation"><%= cat.catname %></li>
-    <!-- <li role="presentation">Action</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li> -->
-    <% end %>
-  </ul>
-</div>
+<center><buttom type="button" class="btn btn-default" aria-label="Left Align" id="button-i-want-to-move">
+  <span><%= link_to 'New Product', new_product_path %></span></center>
+  <div class="text-center">
+    <div id="dropdown1">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+      Product Category
+      <span class="caret"></span>
+    </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <% @categories.each do |cat| %>
+        <li roll="presentation"><%= cat.catname %></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+
 
 
 <div class="row" id="rowclass">
@@ -62,7 +66,7 @@
 
 
 
-<h1 style="text-align: center;">List of Products</h1>
+
 
 
 <!-- <table>
@@ -120,7 +124,7 @@
   </div>
 </div>
 
-<%= link_to 'New Product', new_product_path %>
+
 
 <br>
  -->
