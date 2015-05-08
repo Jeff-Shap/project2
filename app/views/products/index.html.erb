@@ -3,7 +3,6 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-<link type="text/css" rel="stylesheet" href="./assets/stylesheets/products.css">
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
@@ -41,12 +40,12 @@
 
 <div class="row" id="rowclass">
         <% @products.each do |product| %>
-  <div id="mainwrapper">
+  <div class="wrapper" id="mainwrapper">
 
   <div class="col-md-4" id="col">
 
       <div id="box-1" class="box">
-        <img src="<%=product.imageurl%>"atl= "imgbox" height=100%; width:100%; />
+        <img src="<%=product.imageurl%>"atl= "imgbox" />
         <span class="caption full-caption">
         <h3><%=product.name%></h4>
         <p><%=product.description%></p>
@@ -62,7 +61,7 @@
 
 
 
-<h1 style="text-align: center;">List of Products</h1>
+
 
 
 <!-- <table>
