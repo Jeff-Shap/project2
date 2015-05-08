@@ -2,15 +2,18 @@
 <html>
 <head>
   <title>Congo Marketplace</title>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
+  <link rel="stylesheet" href="./assets/stylesheets/products.css">
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-    <script src="./jquery-min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 </head>
 <body>
 
@@ -25,10 +28,10 @@
 
    
 
-<div class="container" id="topbar">
-  <div class="jumbotron">
-    <h1>CONGO</h1>
-    <span class="lead">The LAB is having a firesale! </span>
+<div class="container-fluid" id="topbar">
+  <div class="jumbotron" id="jumbo">
+    <h1 id="header">CONGO</h1>
+    <span class="lead">The LAB is having a firesale!</span>
     <div id="nav-bar">
 	    <ul>
 	    	<li><%= link_to "Home", products_path %></li>

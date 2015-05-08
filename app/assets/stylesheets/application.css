@@ -14,24 +14,77 @@
 *= require_self
 */
 
+body {
+	background: url('http://i.imgur.com/ExFejht.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+} 
+
 #topbar {
 	width: 100%;
 	padding-left: 0px;
 	padding-right: 0px;
-}
-. well well{
-	width: 50%;
-	margin: auto;
-}
-.catbar{
-	text-align: center; 
-}
-#nav-bar li{
-	font-size: 20px;
-	padding-right: 20px;
+	text-align: left;
+		color: white;
 }
 
-#new_product{
+/*#header {
+	text-align: left;
+	padding-top: 0;
+}*/
+
+
+#header {	
+	padding-top: 0;
+	margin-top: 0;
+  width: 100%;
+}
+
+.jumbotron {
+	margin-top: 5px;
+	height: 180px;
+
+}
+
+#jumbo {
+	background-color: rgba(0,0,0,0.6);
+}
+
+.jumbotron h1 {
+	text-align: left;
+	position: relative;
+	top: -15px;
+
+}
+
+.jumbotron li {
+display: inline;
+padding-right: 20px;
+float: left;
+position: relative;
+left: -3%;
+top: -15px;
+
+}
+
+.lead {
+	position: relative;
+	top: -20px;
+}
+
+
+/*#nav-bar li{
+	font-size: 20px;
+	padding-right: 20px;
+}*/
+
+/*.catbar{
+	text-align: center; 
+}*/
+
+
+
+/*#new_product{
 	text-align: center;
 	text-shadow:2px 2px black;
 	color: white; 
@@ -50,15 +103,10 @@
 	text-align: center;
 	color: black;
 }
-body {
-	background: url('http://i.imgur.com/ExFejht.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-}   
-.jumbotron li {
-display: inline;
-padding-right: 10px;
-float: left;
+
+
+  
+
 }
 
 
@@ -173,4 +221,4 @@ select {
     -o-transform: translateY(100%);
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
-}
+}*/
