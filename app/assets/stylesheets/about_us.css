@@ -1,0 +1,35 @@
+/*about_us.css*/
+body{
+	background: url('http://i.imgur.com/ExFejht.jpg');
+	background-size: cover;
+	background-repeat: repeat;
+} 
+
+.well {
+	width: 55%;
+	position: absolute;
+	margin-left: 25%;
+	margin-right: auto;
+	top: 490px;
+	font-size: 18px;
+}
+
+.profile_pic li{
+	display: inline;
+	list-style-type: none;
+	padding:20px;
+	margin: 20px;
+}
+
+.profile_name li {
+	display: inline;
+	list-style-type: none;
+	padding:10px;
+	margin: 10px;
+	margin-left: 40px;
+	margin-right: 60px;
+	font-size:22px;
+	color: white; 
+	font-weight: bold;
+	background-color: rgba(0,0,0,0.6);
+}
