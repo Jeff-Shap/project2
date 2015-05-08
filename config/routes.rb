@@ -2,6 +2,11 @@ Rails.application.routes.draw do
   resources :reviews
   resources :products
   root 'products#index'
+  
+  get 'about', to: 'products#about', as: :about
+
+  get 'contact_us', to: 'products#contact_us', as: :contact_us
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

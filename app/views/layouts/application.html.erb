@@ -5,8 +5,51 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <script src="./jquery-min.js"></script>
+
 </head>
 <body>
+<div class="container-fluid">
+<div class="container" id="topbar">
+  <div class="jumbotron">
+    <h1>CONGO</h1>
+    <!-- <span class="lead">The LAB is having a firesale! </span>  -->   
+    <div class=" nav-bar">
+      <div id="pages">
+        <ul>
+          <li><%= link_to "Home", @product %></li>
+          <li><%= link_to "About Congo", about_path %></li>
+          <li><%= link_to "Contact Us", contact_us_path %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div> 
+<select>
+<option>Cat1</option>
+<option>Cat2</option> 
+</select> 
+</div> 
+</div> 
+
+
+<div class="row">
+	<div class="col-md-4">
+	</div>
+
+	<div class="col-md-4">
+	</div>
+
+	<div class="col-md-4">
+	</div>	
+</div>
 
 <%= yield %>
 

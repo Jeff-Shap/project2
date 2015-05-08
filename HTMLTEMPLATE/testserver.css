@@ -11,15 +11,27 @@ body {
 	background-repeat: no-repeat;
 }   
 
-
-
-
-
-
-
 .jumbotron {
 	margin-top: 5px;
+
 }
+
+.jumbotron li {
+	display: inline;
+	padding-right: 10px;
+	float: left;
+
+}
+
+
+
+
+ul {
+	padding: 0px;
+
+}
+
+	
 
 .jumbotron h1 {
 	text-align: left;
